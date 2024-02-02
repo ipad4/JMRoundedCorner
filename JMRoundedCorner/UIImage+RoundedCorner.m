@@ -31,7 +31,7 @@
 }
 
 + (UIImage *)jm_imageWithRoundedCornersAndSize:(CGSize)sizeToFit JMRadius:(JMRadius)radius borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth backgroundColor:(UIColor *)backgroundColor backgroundImage:(UIImage *)backgroundImage withContentMode:(UIViewContentMode)contentMode {
-    if (size.width <= 0 || size.height <= 0) return nil;
+    if (sizeToFit.width <= 0 || sizeToFit.height <= 0) return nil;
 
     if (backgroundImage) {
         backgroundImage = [backgroundImage scaleToSize:CGSizeMake(sizeToFit.width, sizeToFit.height) withContentMode:contentMode backgroundColor:backgroundColor];
